@@ -16,3 +16,9 @@ uploaded_files/
 
 # Ignore macOS system files
 .DS_Store
+
+# Documentation videos and related files
+docs/videos/PACS-Lab-tutorial.en.mp4
+docs/videos/PACS-Lab-tutorial.en.srt
+docs/videos/review-frames/
+docs/videos/pacs-lab-tutorial.src/
