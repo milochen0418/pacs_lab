@@ -532,8 +532,9 @@ class LabState(rx.State):
         if self.job_running:
             return
         self.add_open = value
-        if value:
+        if value:  # a fresh choice: nothing ticked yet
             self.job_id, self.job = "", {}
+            self.pick_starter, self.pick_library, self.relabel = [], [], True
             return LabState.load_library
 
     @rx.event
